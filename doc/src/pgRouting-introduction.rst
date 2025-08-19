@@ -66,6 +66,7 @@ This Release Contributors
 Individuals in this release v4.0.0 (in alphabetical order)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Fan Wu
 Regina Obe,
 Vicky Vergara
 

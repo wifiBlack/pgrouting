@@ -27,10 +27,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
  ********************************************************************PGR-GNU*/
 
-----------------------------
--- pgr_kingOrdering
-----------------------------
-
 --v4.0
 CREATE FUNCTION pgr_kingOrdering(
     TEXT, -- edges_sql (required)
@@ -41,9 +37,8 @@ $BODY$
     SELECT seq, node
     FROM _pgr_kingOrdering(_pgr_get_statement($1));
 $BODY$
-LANGUAGE SQL VOLATILE STRICT;
-
--- COMMENTS
+LANGUAGE SQL VOLATILE STRICT
+COST ${COST_HIGH} ROWS ${ROWS_HIGH};
 
 COMMENT ON FUNCTION pgr_kingOrdering(TEXT)
 IS 'pgr_kingOrdering

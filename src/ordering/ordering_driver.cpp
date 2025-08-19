@@ -39,7 +39,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #include "cpp_common/assert.hpp"
 
 #include "ordering/kingOrdering.hpp"
-#include "ordering/minDegreeOrdering.hpp"
 
 
 
@@ -59,7 +58,6 @@ do_ordering(
     using pgrouting::to_pg_msg;
     using pgrouting::pgr_free;
     using pgrouting::kingOrdering;
-    using pgrouting::minDegreeOrdering;
     using pgrouting::pgget::get_edges;
     using pgrouting::UndirectedGraph;
 
@@ -91,8 +89,6 @@ do_ordering(
         undigraph.insert_edges(edges);
 
         if (which == 2) {
-            results = minDegreeOrdering(undigraph);
-        } else if (which ==3) {
             results = kingOrdering(undigraph);
         }
         auto count = results.size();
