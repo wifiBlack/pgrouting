@@ -4,6 +4,7 @@ SET(LOCAL_FILES
     topologicalSort
     kingOrdering
     minDegreeOrdering
+    sloanOrdering
     )
 
 foreach (f ${LOCAL_FILES})

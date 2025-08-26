@@ -63,12 +63,14 @@ Contributors
 This Release Contributors
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Individuals in this release v3.8.x (in alphabetical order)
+Individuals in this release v4.0.0 (in alphabetical order)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Aurélie Bousquet,
+Bipasha Gayary,
 Fan Wu,
 Regina Obe,
+Saloni kumari,
 Vicky Vergara
 
 
@@ -111,6 +113,7 @@ Aryan Gupta,
 Ashraf Hossain,
 Ashish Kumar,
 Aurélie Bousquet,
+Bipasha Gayary,
 Cayetano Benavent,
 Christian Gonzalez,
 Daniel Kastl,
@@ -147,6 +150,7 @@ Rajat Shinde,
 Razequl Islam,
 Regina Obe,
 Rohith Reddy,
+Saloni Kumari,
 Sarthak Agarwal,
 Shobhit Chaurasia,
 Sourabh Garg,

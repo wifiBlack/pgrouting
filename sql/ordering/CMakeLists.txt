@@ -3,13 +3,11 @@ SET(LOCAL_FILES
     cuthillMckeeOrdering.sql
     _minDegreeOrdering.sql
     minDegreeOrdering.sql
+    _sloanOrdering.sql
+    sloanOrdering.sql
     _kingOrdering.sql
     kingOrdering.sql
     )
-
-# Do not modify below this line
-
-
 
 foreach (f ${LOCAL_FILES})
     configure_file(${f} ${f})

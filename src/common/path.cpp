@@ -1,5 +1,5 @@
 /*PGR-GNU*****************************************************************
-File: basePath_SSEC.cpp
+File: path.cpp
 
 Copyright (c) 2015 pgRouting developers
 Mail: project@pgrouting.org
@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
  ********************************************************************PGR-GNU*/
 
-#include "cpp_common/basePath_SSEC.hpp"
+#include "cpp_common/path.hpp"
 
 #include <cmath>
 #include <limits>
@@ -168,10 +168,9 @@ bool Path::isEqual(const Path &subpath) const {
     if (subpath.empty()) return true;
     if (subpath.size() >= path.size()) return false;
     std::deque< Path_t >::const_iterator i, j;
-    for (i = path.begin(),  j = subpath.begin();
-            j != subpath.end();
-            ++i, ++j)
+    for (i = path.begin(),  j = subpath.begin(); j != subpath.end(); ++i, ++j) {
         if ((*i).node != (*j).node) return false;
+    }
     return true;
 }
 
@@ -319,8 +318,9 @@ collapse_paths(
         const std::deque< Path > &paths) {
     size_t sequence = 0;
     for (const Path &path : paths) {
-        if (path.path.size() > 0)
+        if (path.path.size() > 0) {
             path.generate_postgres_data(ret_path, sequence);
+        }
     }
     return sequence;
 }

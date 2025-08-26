@@ -28,7 +28,6 @@
 
   * New experimental function.
 
-
 Description
 -------------------------------------------------------------------------------
 
@@ -139,5 +138,4 @@ See Also
 
 * :ref:`genindex`
 * :ref:`search`
-
 

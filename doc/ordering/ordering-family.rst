@@ -22,10 +22,10 @@ Ordering - Family of functions
 .. official-start
 
 * :doc:`pgr_cuthillMckeeOrdering` - Return reverse Cuthill-McKee ordering of an undirected graph.
-* :doc:`pgr_topologicalSort` - Linear ordering of the vertices for directed
-* :doc:`pgr_kingOrdering` - Returns the King ordering of an undirected graphs
-* :doc:`pgr_minDegreeOrdering` - Returns the Minimum Degree ordering of an undirected graphs
-  acyclic graph.
+* :doc:`pgr_topologicalSort` - Linear ordering of the vertices for directed acyclic graph.
+* :doc:`pgr_kingOrdering` - Returns the King ordering of an undirected graph.
+* :doc:`pgr_minDegreeOrdering` - Returns the Minimum Degree ordering of an undirected graph.
+* :doc:`pgr_sloanOrdering` - Returns the Sloan ordering of an undirected graph.
 
 .. official-end
 
@@ -36,6 +36,7 @@ Ordering - Family of functions
     pgr_topologicalSort
     pgr_kingOrdering
     pgr_minDegreeOrdering
+    pgr_sloanOrdering
 
 See Also
 -------------------------------------------------------------------------------

@@ -82,4 +82,4 @@ kingOrdering(G &graph) {
 
 }  // namespace pgrouting
 
-#endif  // INCLUDE_ORDERING_ORDERING_HPP_
+#endif  // INCLUDE_ORDERING_KINGORDERING_HPP_

@@ -27,10 +27,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
  ********************************************************************PGR-GNU*/
 
-----------------------------
--- _pgr_kingOrdering
-----------------------------
-
 --v4.0
 CREATE FUNCTION _pgr_kingOrdering(
     TEXT,
@@ -40,10 +36,9 @@ CREATE FUNCTION _pgr_kingOrdering(
 
 RETURNS SETOF RECORD AS
 'MODULE_PATHNAME'
-LANGUAGE C IMMUTABLE STRICT;
+LANGUAGE C VOLATILE STRICT
+COST ${COST_HIGH} ROWS ${ROWS_HIGH};
 
--- COMMENTS
 
 COMMENT ON FUNCTION _pgr_kingOrdering(TEXT)
 IS 'pgRouting internal function';
-
